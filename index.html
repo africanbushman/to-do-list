@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
     <meta charset="utf-8">
-    <title></title>
+    <title>To Do List</title>
   </head>
   <body>
-
+    <form class="container" id="needs-validation" novalidate>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="validationCustom01">First name</label>
+          <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="" required>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="validationCustom02">Last name</label>
+          <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="validationCustom03">Time</label>
+          <input type="text" class="form-control" id="validationCustom03" placeholder="Time" required>
+          <div class="invalid-feedback">
+            Please provide a valid time.
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationCustom04">Location</label>
+          <input type="text" class="form-control" id="validationCustom04" placeholder="Location" required>
+          <div class="invalid-feedback">
+            Please provide a valid Location.
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationCustom05">Notes</label>
+          <input type="text" class="form-control" id="validationCustom05" placeholder="Notes" required>
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit">Submit task</button>
+    </form>
   </body>
   <script src="jquery-3-2-1.js" charset="utf-8"></script>
   <script src="scripts.js" charset="utf-8"></script>
